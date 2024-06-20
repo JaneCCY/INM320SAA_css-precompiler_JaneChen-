@@ -1,0 +1,19 @@
+{
+  "name": "assign3-css-precompiler-",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run sass:watch\"",
+    "server": "lite-server --baseDir=public",
+    "sass:watch": "cd src && sass scss:../public/assets/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "sass": "^1.77.6"
+  }
+}
